@@ -30,7 +30,7 @@ mkdir base-tomcat-maven
 
 cd base-tomcat-maven
 
-cat > Dockerfile <<'EOF'
+# 创建并编辑Dockerfile
 FROM maven:3.3.3
 ENV CATALINA_HOME /usr/local/tomcat
 ENV PATH CATALINAHOME/bin:PATH
@@ -45,7 +45,6 @@ RUN set -x \
 && rm tomcat.tar.gz*
 EXPOSE 8080
 CMD ["catalina.sh", "run"]
-EOF
 ```
 
 ### 3. build 镜像
@@ -66,8 +65,6 @@ docker build -t base-tomcat-maven .
 git clone https://github.com/2019-web/docker-demo-java-tomcat.git
 
 cd docker-demo-java-tomcat
-
-sed -i '/^FROM/c FROM base-tomcat-maven' Dockerfile # 修改 Dockerfile 中的 base 镜像
 
 docker build -t docker-demo-java-tomcat .
 ```
