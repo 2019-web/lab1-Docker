@@ -23,6 +23,11 @@ URL链接 : [https://amazonaws-china.com/cn/about-aws/events/webinar/#AWS_基础
 
 **注意 :** 安装的是 Docker CE 版本
 
+```
+docker run -idt --name demo -p 8001:8080 docker-demo-java-tomcat:latest  
+```
+
+
 
 如果使用 AWS 服务器，默认的安全组规则会拦截服务器的入站流量。为了能够正常访问，我们需要放开对 8080 端口的限制：
 
