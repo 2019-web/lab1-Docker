@@ -28,6 +28,8 @@ URL链接 : [https://docs.aws.amazon.com/zh_cn/vpc/latest/userguide/VPC_Scenario
 
 在公有子网下创建实例，启动一台服务器，在这台服务器上配置Docker，完成下面的实验。
 
+要先去看 lab1 提供的三个pdf文档，做到大致了解，有细节问题可以去pdf文档中去查看。
+
 URL链接 : [https://github.com/2019-web/base-tomcat-maven](https://github.com/2019-web/base-tomcat-maven)
 
 URL链接 : [https://github.com/2019-web/docker-demo-java-tomcat](https://github.com/2019-web/docker-demo-java-tomcat)
@@ -104,7 +106,7 @@ curl localhost:8001
 ```
 
 
-### 说明
+### 5. 安全组问题
 
 如果使用 AWS 服务器，默认的安全组规则会拦截服务器的入站流量。为了能够正常访问，我们需要放开对 8080 端口的限制：
 
@@ -116,6 +118,9 @@ curl localhost:8001
 
 如果一切正常，就可以通过 服务器公网 IP:8001 浏览器来访问你的项目了。
 
+### 6. 思考题
+
+利用 Dockerfile 文件编排的镜像，
 
 
 
