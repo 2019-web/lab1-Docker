@@ -73,11 +73,13 @@ docker build -t docker-demo-java-tomcat .
 ```
 
 
+### 4. 运行容器
 
-
+基于镜像，运行容器
 
 ```
 docker run -idt --name demo -p 8001:8080 docker-demo-java-tomcat:latest  
+curl localhost:8001
 ```
 
 
@@ -88,9 +90,9 @@ docker run -idt --name demo -p 8001:8080 docker-demo-java-tomcat:latest
 
 2. 点击下方的【入站】->【编辑】
 
-3. 增加入站规则： HTTP 或 HTTPS 可以允许他人访问你服务器上的网址；自定义 TCP 端口 8080 ，允许来源 【任意位置】。
+3. 增加入站规则： HTTP 或 HTTPS 可以允许他人访问你服务器上的网址；自定义 TCP 端口 8001 ，允许来源 【任意位置】。
 
-如果一切正常，就可以通过 服务器公网 IP:8080 来访问你的工程了。
+如果一切正常，就可以通过 服务器公网 IP:8001 浏览器来访问你的项目了。
 
 
 
