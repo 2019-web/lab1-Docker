@@ -26,13 +26,21 @@ URL链接 : [https://docs.aws.amazon.com/zh_cn/vpc/latest/userguide/VPC_Scenario
 
 ## Docker的使用
 
+在公有子网下创建实例，启动一台服务器，在这台服务器上配置Docker，完成下面的实验。
+
+URL链接 : [https://github.com/2019-web/base-tomcat-maven](https://github.com/2019-web/base-tomcat-maven)
+
+URL链接 : [https://github.com/2019-web/docker-demo-java-tomcat](https://github.com/2019-web/docker-demo-java-tomcat)
+
+
 ### 1. 准备 Docker 环境
 
-下面演示在服务器的环境是 Ubuntu 18.04 下安装Docker，既然采用的是亚马逊云服务器，服务器在国外，可以使用Docker官方的文档来安装Docker。
+下面演示在服务器环境是 Ubuntu 18.04 下安装Docker，既然采用的是亚马逊云服务器，服务器在国外，可以使用Docker官方的文档来安装Docker。
 
-URL链接 : [https://docs.docker.com/install/linux/docker-ce/ubuntu/](https://docs.docker.com/install/linux/docker-ce/ubuntu/)
+安装文档URL链接 : [https://docs.docker.com/install/linux/docker-ce/ubuntu/](https://docs.docker.com/install/linux/docker-ce/ubuntu/)
 
 **注意 :** 安装的是 Docker CE 版本
+
 
 ### 2. 编写 Dockerfile
 
@@ -68,6 +76,9 @@ docker build -t base-tomcat-maven .
 . # 表示使用当前目录下的 Dockerfile, 还可以通过-f 指定 Dockerfile 所在路径
 ```
 
+```
+docker ps
+```
 运行成功会看到一个叫base-tomcat-maven的镜像
 
 基于base-tomcat-maven镜像，将java应用通过maven编译打包放到tomcat webapps目 录，生成最终镜像。demo代码见github
@@ -86,11 +97,14 @@ docker build -t docker-demo-java-tomcat .
 基于镜像，运行容器
 
 ```
-docker run -idt --name demo -p 8001:8080 docker-demo-java-tomcat:latest  
+# 创建并启动一个名为demo的docker容器，主机的8001端口映射docker容器的8080端口
+docker run -idt --name demo -p 8001:8080 docker-demo-java-tomcat:latest
+# 模拟HTTP请求，测试浏览器是否能正常访问  
 curl localhost:8001
 ```
 
 
+### 说明
 
 如果使用 AWS 服务器，默认的安全组规则会拦截服务器的入站流量。为了能够正常访问，我们需要放开对 8080 端口的限制：
 
