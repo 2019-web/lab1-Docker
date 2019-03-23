@@ -16,6 +16,9 @@ URL链接 : [https://amazonaws-china.com/cn/about-aws/events/webinar/#AWS_基础
 
 ## Docker的使用
 
+### 准备 Docker 环境
+
+下面演示在服务器的环境是 Ubuntu 18.04 下安装Docker，
 
 
 如果使用 AWS 服务器，默认的安全组规则会拦截服务器的入站流量。为了能够正常访问，我们需要放开对 8080 端口的限制：
