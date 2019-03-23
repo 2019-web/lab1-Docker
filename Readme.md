@@ -22,7 +22,7 @@ URL链接 : [https://docs.aws.amazon.com/zh_cn/vpc/latest/userguide/VPC_Scenario
 
 > 公有子网中的实例可直接将出站流量发往 Internet，而私有子网中的实例不能这样做。但是，私有子网中的实例可使用位于公有子网中的网络地址转换 (NAT) 网关访问 Internet。数据库服务器可以使用 NAT 网关连接到 Internet 进行软件更新，但 Internet 不能建立到数据库服务器的连接。
 
-我们最终的期末Project是前后端分离的项目，简单点的建构是 : 需要两个服务器实例，一台服务器运行前端程序，位于**公有子网**，后端程序，位于**私有子网**。
+我们最终的期末Project是前后端分离的项目，简单点的建构方案是 : 需要两个服务器实例，一台服务器运行前端程序，位于**公有子网**，另一台服务器运行后端程序，位于**私有子网**。
 
 ## Docker的使用
 
@@ -35,7 +35,7 @@ URL链接 : [https://github.com/2019-web/docker-demo-java-tomcat](https://github
 
 ### 1. 准备 Docker 环境
 
-下面演示在服务器环境是 Ubuntu 18.04 下安装Docker，既然采用的是亚马逊云服务器，服务器在国外，可以使用Docker官方的文档来安装Docker。
+下面演示在服务器环境是 Ubuntu 18.04 下安装Docker，既然采用的是亚马逊云服务器，服务器在国外，可以使用Docker官方文档的步骤来安装Docker。
 
 安装文档URL链接 : [https://docs.docker.com/install/linux/docker-ce/ubuntu/](https://docs.docker.com/install/linux/docker-ce/ubuntu/)
 
