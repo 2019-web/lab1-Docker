@@ -14,12 +14,23 @@ URL链接 : [https://amazonaws-china.com/cn/about-aws/events/webinar/#AWS_基础
 
 URL链接 : [https://amazonaws-china.com/cn/about-aws/events/webinar/#AWS_基础服务介绍及实操_-_利用_Amazon_VPC_服务搭建经典_Web_三层架构](https://amazonaws-china.com/cn/about-aws/events/webinar/#AWS_基础服务介绍及实操_-_利用_Amazon_VPC_服务搭建经典_Web_三层架构)
 
+## 实验——场景 2：带有公有子网和私有子网 (NAT) 的 VPC
+
+URL链接 : [https://docs.aws.amazon.com/zh_cn/vpc/latest/userguide/VPC_Scenario2.html](https://docs.aws.amazon.com/zh_cn/vpc/latest/userguide/VPC_Scenario2.html)
+
+> 这个场景的配置包括一个有公有子网和私有子网的 Virtual Private Cloud (VPC)。如果您希望运行面向公众的 Web 应用程序，并同时保留不可公开访问的后端服务器，我们建议您使用此场景。常用例子是一个多层网站，其 Web 服务器位于公有子网之内，数据库服务器则位于私有子网之内。您可以设置安全性和路由，以使 Web 服务器能够与数据库服务器建立通信。
+
+> 公有子网中的实例可直接将出站流量发往 Internet，而私有子网中的实例不能这样做。但是，私有子网中的实例可使用位于公有子网中的网络地址转换 (NAT) 网关访问 Internet。数据库服务器可以使用 NAT 网关连接到 Internet 进行软件更新，但 Internet 不能建立到数据库服务器的连接。
+
+我们最终的期末Project是前后端分离的项目，简单点的建构是 : 需要两个服务器实例，一台服务器运行前端程序，位于**公有子网**，后端程序，位于**私有子网**。
+
 ## Docker的使用
 
 ### 1. 准备 Docker 环境
 
 下面演示在服务器的环境是 Ubuntu 18.04 下安装Docker，既然采用的是亚马逊云服务器，服务器在国外，可以使用Docker官方的文档来安装Docker。
-[https://docs.docker.com/install/linux/docker-ce/ubuntu/](https://docs.docker.com/install/linux/docker-ce/ubuntu/)
+
+URL链接 : [https://docs.docker.com/install/linux/docker-ce/ubuntu/](https://docs.docker.com/install/linux/docker-ce/ubuntu/)
 
 **注意 :** 安装的是 Docker CE 版本
 
