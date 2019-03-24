@@ -31,6 +31,8 @@ URL链接 : [https://docs.aws.amazon.com/zh_cn/vpc/latest/userguide/VPC_Scenario
 
 **VPC子网配置参考图**
 
+仅供参考，具体数值可以不同！
+
 ![](./assests/img/vpc.png)
 
 
