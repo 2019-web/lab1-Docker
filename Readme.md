@@ -27,7 +27,12 @@ URL链接 : [https://docs.aws.amazon.com/zh_cn/vpc/latest/userguide/VPC_Scenario
 
 关于“AWS VPC with Public and Private Subnets”的关键词在Youtube上有大量的视频演示配置操作，VPC会简单的配置即可，不是重点内容。
 
-部分视频 : [https://pan.baidu.com/s/1kelNoyQikYVm5MOR3M0KKA](https://pan.baidu.com/s/1kelNoyQikYVm5MOR3M0KKA)
+**操作演示视频 :** [https://pan.baidu.com/s/1kelNoyQikYVm5MOR3M0KKA](https://pan.baidu.com/s/1kelNoyQikYVm5MOR3M0KKA)
+
+**VPC子网配置参考图**
+
+![](./assests/img/vpc.png)
+
 
 
 ## Docker的使用
