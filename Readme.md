@@ -25,7 +25,7 @@ URL链接 : [https://docs.aws.amazon.com/zh_cn/vpc/latest/userguide/VPC_Scenario
 我们最终的期末Project是前后端分离的项目，简单点的建构方案是 : 需要两个服务器实例，一台服务器运行前端程序，位于**公有子网**，另一台服务器运行后端程序，位于**私有子网**。
 
 
-关于“AWS VPC with Public and Private Subnets”的关键词在Youtube上有大量的视频演示配置操作，VPC会简单的配置即可，不是重点内容。
+关于“AWS VPC with Public and Private Subnets”的关键词在Youtube上有大量的视频演示配置操作，VPC会简单的配置即可，不是重点内容，Docker需要重点理解。
 
 **操作演示视频 :** [https://pan.baidu.com/s/1kelNoyQikYVm5MOR3M0KKA](https://pan.baidu.com/s/1kelNoyQikYVm5MOR3M0KKA)
 
