@@ -41,7 +41,7 @@ URL链接 : [https://docs.aws.amazon.com/zh_cn/vpc/latest/userguide/VPC_Scenario
 
 在公有子网下创建实例，启动一台服务器，在这台服务器上配置Docker，完成下面的实验。
 
-要先去看 lab1 提供的三个pdf文档，做到大致了解，有细节问题可以去pdf文档中去查看。
+要先去看目录 **lab1-Docker/assests/material/** 提供的三个pdf文档，做到大致了解，有细节问题可以去pdf文档中去查看。
 
 URL链接 : [https://github.com/2019-web/base-tomcat-maven](https://github.com/2019-web/base-tomcat-maven)
 
