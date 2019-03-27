@@ -96,7 +96,7 @@ docker images
 ```
 运行成功会看到一个叫base-tomcat-maven的镜像
 
-基于base-tomcat-maven镜像，将java应用通过maven编译打包放到tomcat webapps目 录，生成最终镜像。demo代码见github
+基于base-tomcat-maven镜像，将java应用通过maven编译打包放到tomcat webapps目录，生成最终镜像。demo代码见github
 
 ```
 git clone https://github.com/2019-web/docker-demo-java-tomcat.git
