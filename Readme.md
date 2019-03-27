@@ -92,7 +92,7 @@ docker build -t base-tomcat-maven .
 ```
 
 ```
-docker ps
+docker images
 ```
 运行成功会看到一个叫base-tomcat-maven的镜像
 
