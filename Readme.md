@@ -137,7 +137,7 @@ curl localhost:8001
 
 - 第2题 : 我们的实验，docker-demo-java-tomcat镜像要基于base-tomcat-maven镜像运行，最终是运行一个容器，容器内的Java Web程序是简单的JSP输出“Hello World”。大家在大一期间应该做个简单的“JSP与数据库增删改查”的项目，考虑这个项目的 Dockerfile 文件如何编写？容器如何启动？数据库的持久化如何去做？（说明 : 这题目思路不唯一，开放性的）
 
-- 第3题 : 如果思考完第2题，我们知道tomcat服务器安装配置、Java Web安装配置、数据库的安装配置都是在一个Dockerfile文件里面的，最终运行的是一个容器。而事实上，可以是三个容器 : 服务器容器、Web程序容器、数据库容器，这三个容器如何配合使用? (keywords: docker-compose、networks)
+- 第3题 : 如果思考完第2题，我们知道tomcat服务器安装配置、Java Web安装配置、数据库的安装配置都是在单独的Dockerfile文件里面的，最终运行的是一个容器。而事实上，可以是三个容器 : 服务器容器、Web程序容器、数据库容器，这三个容器如何配合使用? (keywords: docker-compose、networks)
 
 **说明 :** Docker 真的很有用的，会大大提高环境配置的效率。这三个问题写个大致的思路就好，写在word文档上上交，暂时不要求写代码去实现，在超星学习通上已经布置了作业的。
 
