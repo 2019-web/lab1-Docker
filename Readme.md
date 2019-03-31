@@ -135,7 +135,7 @@ curl localhost:8001
 
 - 第1题 : 镜像(image)是静态的，容器(container)是动态的，容器就是在静态的镜像基础上加了一层读写层(Read-Write Layer)，当容器重启时，在读写层做的任何改变都会丢失的，因此，容器是无状态的。思考 MySQL、Session 在容器做持久化问题的解决方案？（keywords : 容器持久化）
 
-- 第2题 : 我们的实验，docker-demo-java-tomcat镜像要基于base-tomcat-maven镜像运行，最终是运行一个容器，容器内的Java Web程序是简单的JSP输出“Hello World”。大家在大一期间应该做个简单的“JSP与数据库增删改查”的项目，考虑这个项目的 Dockerfile 文件如何编写？容器如何启动？数据库的持久化如何去做？
+- 第2题 : 我们的实验，docker-demo-java-tomcat镜像要基于base-tomcat-maven镜像运行，最终是运行一个容器，容器内的Java Web程序是简单的JSP输出“Hello World”。大家在大一期间应该做个简单的“JSP与数据库增删改查”的项目，考虑这个项目的 Dockerfile 文件如何编写？容器如何启动？数据库的持久化如何去做？（说明 : 这题目思路不唯一，开放性的）
 
 - 第3题 : 如果思考完第2题，我们知道tomcat服务器安装配置、Java Web安装配置、数据库的安装配置都是在一个Dockerfile文件里面的，最终运行的是一个容器。而事实上，可以是三个容器 : 服务器容器、Web程序容器、数据库容器，这三个容器如何配合使用? (keywords: docker-compose、networks)
 
